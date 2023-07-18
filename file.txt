@@ -1,0 +1,72 @@
+// inizio esercizio 1 
+
+SELECT *
+FROM `students`
+WHERE year (`date_of_birth`) = 1990
+
+// fine esercizio 1 
+
+
+// inizio esercizio 2 
+
+SELECT *
+FROM `courses`
+WHERE `cfu` > 10
+
+// fine esercizio 2 
+
+// inizio esercizio 3
+
+SELECT *
+FROM `students`
+WHERE timestampdiff(year,`date_of_birth`, curdate()) > 30;
+
+// fine esercizio 3
+
+
+// inizio esercizio 4
+
+SELECT *
+FROM `courses`
+WHERE `period` = '1 semestre'
+AND `year` = 1 
+
+// fine esercizio 4
+
+
+// inizio esercizio 5
+
+SELECT *
+FROM `exams`
+WHERE `date` = '2020-06-20'
+AND hour(`hour`) >= 14
+
+// fine esercizio 5
+
+
+// inizio esercizio 6
+
+SELECT *
+FROM `degrees`
+WHERE `level` = 'magistrale'
+
+// fine esercizio 6
+
+
+// inizio esercizio 7
+
+SELECT count (*) as n_dipendenti 
+FROM `departments`
+
+
+// fine esercizio 7
+
+
+// inizio esercizio 8
+
+SELECT count (*) as n_insegnanti
+FROM `teachers`
+WHERE `phone ` IS NULL 
+
+
+// fine esercizio 8
